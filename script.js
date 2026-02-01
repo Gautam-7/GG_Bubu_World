@@ -13,7 +13,7 @@ function updateCountdown() {
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / (1000 * 60)) % 360);
+    const seconds = Math.floor((diff / (1000)) % 60);
     document.getElementById("timer").innerHTML = `Almost there !!! 🔜<br>${days} days · ${hours} hours · ${minutes} minutes · ${seconds} seconds`;
     return;
   }
