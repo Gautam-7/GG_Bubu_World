@@ -3,10 +3,10 @@ const heartEl = document.getElementById("heart");
 const hearts = ["💖", "💗", "💘"];
 
 const pattern = [
-  "   x x            x x    ",
-  "   x x x          x x x   ",
-  "  x x x x        x x x x ",
-  " x x x x x    x x x x x",
+  "   x x x          x x x    ",
+  "   x x x x       x x x x   ",
+  "  x x x x x       x x x x x ",
+  " x x x x x  x  x x x x x",
   " x x x x x   x x x x x",
   "   x x x x x x x x x ",
   "    x x x x x x x x ",
