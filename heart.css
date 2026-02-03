@@ -27,11 +27,18 @@ body {
 
 .message {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 5rem;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
   animation-delay: 1.5s;
   color: #444;
+  font: bold;
+}
+
+.message a {
+    text-decoration: none;
+    color: #444;
 }
 
 @keyframes fadeIn {
