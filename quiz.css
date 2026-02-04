@@ -56,3 +56,41 @@ button:hover {
   margin-top: 1rem;
   font-weight: bold;
 }
+
+@keyframes dropOff {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+.drop-off {
+  animation: dropOff 0.8s forwards;
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+footer a {
+  display: inline-block; 
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: #c75c6f;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
