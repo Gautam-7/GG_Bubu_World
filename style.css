@@ -23,10 +23,10 @@ body {
   right: 1.5rem;
 
   background: rgba(255, 255, 255, 0.9);
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 14px;
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -36,6 +36,7 @@ body {
 }
 
 .hero p {
+  position: relative;
   font-size: 1.1rem;
   opacity: 0.8;
 }
@@ -88,4 +89,13 @@ footer {
   margin-top: 1rem;
   font-size: 0.9rem;
   opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .gifts {
+    top: 1rem;     
+    right: 1rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
 }
