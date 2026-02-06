@@ -14,7 +14,7 @@ const questions = [
     { question: "How many times have I gotten you flowers", options: ["1", "4", "6"], answer: "4" },
     { question: "What is our favourite memory?", options: ["Goa", "Meeting for the first time", "Regenta"], answer: "Meeting for the first time" },
     { question: "What Naan did we eat at fountain?", options: ["Garlic", "Butter", "Plain"], answer: "Garlic" },
-    { question: "Best thing about you?", options: ["Kindness", "Your love", "Emotions"], answer: "Your Love" },
+    { question: "Best thing about you?", options: ["Kindness", "Your Love", "Emotions"], answer: "Your Love" },
     { question: "My favourite Chelsea Player?", options: ["Hazard", "Drogba", "Lampard"], answer: "Lampard" },
     { question: "Best food we have had till now?", options: ["Fountain", "Your Pasta", "Chur Chur Naan"], answer: "Your Pasta" },
     { question: "Kanada word I learned first", options: ["Chennagite", "Novu Hegide", "Pretisthutheni"], answer: "Novu Hegide" },
@@ -41,7 +41,7 @@ let shuffledQuestions = getRandomQuestions(questions,5);
 let currentIndex = 0;
 let score = 0;
 
-if (Math.random() < 0.1) {
+if (Math.random() < 0.05) {
   shuffledQuestions.unshift(specialQuestion); 
 }
 
