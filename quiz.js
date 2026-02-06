@@ -7,8 +7,8 @@ const questions = [
     { question: "When did we get 'engaged'?", options: ["29 Aug", "30 Aug", "31 Aug"], answer: "31 Aug" },
     { question: "When did we first meet?", options: ["14 Feb", "13 Feb", "15 Feb"], answer: "14 Feb" },
     { question: "First hotel we stayed", options: ["Regenta", "Sparsh", "Privilon"], answer: "Sparsh" },
-    { question: "Which season do they like the most?", options: ["Summer", "Autumn", "Winter"], answer: "Autumn" },
-    { question: "What’s their dream vacation spot?", options: ["Switzerland", "Maldives", "USA"], answer: "Switzerland" },
+    { question: "Which season do I like the most?", options: ["Summer", "Autumn", "Winter"], answer: "Autumn" },
+    { question: "What’s my dream vacation spot?", options: ["Switzerland", "Maldives", "USA"], answer: "Switzerland" },
     { question: "Where's Chelsea's home?", options: ["Stamford Bridge", "Standford Park", "Stanford Bridge"], answer: "Stamford Bridge" },
     { question: "Where did we not go when in Goa?", options: ["Candolim", "Panaji", "Anjuna"], answer: "Anjuna" },
     { question: "How many times have I gotten you flowers", options: ["1", "4", "6"], answer: "4" },
@@ -16,9 +16,14 @@ const questions = [
     { question: "What Naan did we eat at fountain?", options: ["Garlic", "Butter", "Plain"], answer: "Garlic" },
     { question: "Best thing about you?", options: ["Kindness", "Your love", "Emotions"], answer: "Your Love" },
     { question: "My favourite Chelsea Player?", options: ["Hazard", "Drogba", "Lampard"], answer: "Lampard" },
-    { question: "Best food we have had till now?", options: ["Fountain", "Your pasta", "Chur Chur Naan"], answer: "Your Pasta" },
+    { question: "Best food we have had till now?", options: ["Fountain", "Your Pasta", "Chur Chur Naan"], answer: "Your Pasta" },
     { question: "Kanada word I learned first", options: ["Chennagite", "Novu Hegide", "Pretisthutheni"], answer: "Novu Hegide" },
-    { question: "My favourite food?", options: ["Chicken", "Eggs", "Potato"], answer: "Eggs" }
+    { question: "My favourite food?", options: ["Chicken", "Eggs", "Potato"], answer: "Eggs" },
+    { question: "What about you bothers me the most?", options: ["Your EX", "Your Anger", "Your Health"], answer: "Your Anger" },
+    { question: "How good are we together?", options: ["OK OK", "Very Good", "Perfect"], answer: "Perfect" },
+    { question: "What is my favourite gift from you?", options: ["Chelsea Jersey", "Chelsea Hoodie", "Starry Night Frame"], answer: "Chelsea Jersey" },
+    { question: "What do I like the least?", options: ["Coconut", "Brinjal", "Fish"], answer: "Fish" },
+    { question: "How planned are we about the coming trip?", options: ["No plans", "Rough Idea", "Full planned"], answer: "Rough Idea" }
 ];
 
 const specialQuestion = { question: "Will you be my Valentine?", options: ["Yes", "No"], special: true }
@@ -36,7 +41,7 @@ let shuffledQuestions = getRandomQuestions(questions,5);
 let currentIndex = 0;
 let score = 0;
 
-if (Math.random() < 0.3) {
+if (Math.random() < 0.1) {
   shuffledQuestions.unshift(specialQuestion); 
 }
 
