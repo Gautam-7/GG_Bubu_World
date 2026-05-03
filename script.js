@@ -1,9 +1,9 @@
-const targetDate = new Date("2026-02-07T06:00:00"); 
+const targetDate = new Date("2026-05-15T19:00:00"); 
 
 function updateCountdown() {
   const now = new Date();
   const diff = targetDate - now;
-  const tripenddate = new Date("2026-02-15T20:00:00"); 
+  const tripenddate = new Date("2026-06-07T20:00:00"); 
 
   if (now <= tripenddate && now >= targetDate) {
     document.getElementById("timer").textContent = "Together Again!!! HYPE HYPE HYPE!!!! Yayyyyy!!! 💖";
