@@ -19,8 +19,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-select,
-button {
+select{
   padding: 10px;
   font-size: 16px;
   margin: 5px;
@@ -159,4 +158,44 @@ button {
   .side-panel {
     width: 90%;
   }
+
+  button {
+    font-size: 14px;
+    padding: 10px 14px;
+    flex: 1 1 40%; /* makes buttons responsive */
+  }
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 6px;
+
+  min-height: 44px; /* important for touch */
+  min-width: 44px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #eab292;
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#rollBtn {
+  background-color: #83e5d8;
 }

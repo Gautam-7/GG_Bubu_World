@@ -19,9 +19,9 @@ body {
 }
 
 .box {
-  width: clamp(42px, 10vw, 60px);
-  height: clamp(52px, 12vw, 70px);
-  font-size: clamp(18px, 5vw, 26px);
+  width: clamp(48px, 11vw, 70px);
+  height: clamp(58px, 13vw, 80px);
+  font-size: clamp(20px, 6vw, 28px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +48,9 @@ body {
 }
 
 .letter {
-  width: clamp(36px, 9vw, 48px);
-  height: clamp(36px, 9vw, 48px);
-  font-size: clamp(12px, 4vw, 16px);
+  width: clamp(42px, 10vw, 54px);
+  height: clamp(42px, 10vw, 54px);
+  font-size: clamp(14px, 5vw, 18px);
 
   display: flex;
   justify-content: center;
@@ -99,14 +99,14 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 600;
   color: #5adcc4;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #b394d6;
 }
@@ -174,7 +174,7 @@ button:hover {
 
 @media (max-width: 600px) {
   #word {
-    gap: 6px;
+    gap: 8px;
     margin: 20px 10px;
   }
 
@@ -185,6 +185,6 @@ button:hover {
 
   .container {
     margin: 20px 10px;
-    padding: 10px;
+    padding: 15px;
   }
 }
