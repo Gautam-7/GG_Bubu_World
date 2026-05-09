@@ -34,8 +34,8 @@ button {
 }
 
 .cell {
-  width: 60px;
-  height: 60px;
+  width: var(--cell-size);
+  height: var(--cell-size);
   border: 1px solid #999;
   display: flex;
   justify-content: center;
