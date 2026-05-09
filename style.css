@@ -111,7 +111,7 @@ footer {
 
 @media (max-width: 600px) {
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     overflow-x: auto;
   }
 
