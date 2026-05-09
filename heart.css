@@ -33,7 +33,7 @@ body {
   animation: fadeIn 3s ease forwards;
   animation-delay: 1.5s;
   color: #444;
-  font: bold;
+  font-weight: bold;
 }
 
 .message a {
@@ -60,5 +60,15 @@ body {
   to {
     transform: translate(var(--x), var(--y)) scale(0.5);
     opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .heart {
+    line-height: 1.1;
   }
 }
