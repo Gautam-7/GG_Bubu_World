@@ -19,14 +19,12 @@ body {
 }
 
 .box {
-  width: 45px;
-  height: 55px;
-
+  width: clamp(42px, 10vw, 60px);
+  height: clamp(52px, 12vw, 70px);
+  font-size: clamp(18px, 5vw, 26px);
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 26px;
   font-weight: 600;
 
   border-radius: 10px;
@@ -50,14 +48,13 @@ body {
 }
 
 .letter {
-  width: 38px;
-  height: 38px;
+  width: clamp(36px, 9vw, 48px);
+  height: clamp(36px, 9vw, 48px);
+  font-size: clamp(12px, 4vw, 16px);
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -173,4 +170,21 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 600px) {
+  #word {
+    gap: 6px;
+    margin: 20px 10px;
+  }
+
+  #letters {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .container {
+    margin: 20px 10px;
+    padding: 10px;
+  }
 }
