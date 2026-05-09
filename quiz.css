@@ -1,3 +1,8 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fff9c4, #f8bbd0);
+}
+
 .quiz-container {
   max-width: 500px;
   margin: auto;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake and Ladder Game</title>
+
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <div>
+    <a href="secret_landing.html">Let's play something else</a>
+  </div>
+  <h1>🐍 Reach the top!!!</h1>
+
+  <div class="setup">
+    <label>Select Players:</label>
+    <button class="startBtn" onclick="startGame(1)">Just You</button>
+    <button class="startBtn" onclick="startGame(2)">You + One</button>
+    <button class="startBtn" onclick="startGame(3)">You + Two</button>
+    <button class="startBtn" onclick="startGame(4)">You + Three</button>
+  </div>
+
+  <div class="game-container">
+
+  <div id="board"></div>
+
+  <div class="side-panel">
+    <h2>Try your Luck</h2>
+
+    <button id="rollBtn">🎲 Roll Dice</button>
+
+    <div class="dice-box" id="diceResult">
+      🎲
+    </div>
+
+    <div id="status">
+    </div>
+
+  </div>
+
+</div>
+  <script src="snake.js"></script>
+</body>
+</html>

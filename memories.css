@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(180deg, #fff7f9, #fdfdfd);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2, #fce4ec);
   color: #333;
   line-height: 1.6;
 }

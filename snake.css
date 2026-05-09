@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #e8f5e9, #f1f8e9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.setup {
+  margin-bottom: 20px;
+}
+
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+  border: 4px solid #222;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  background: white;
+}
+
+.cell:nth-child(even) {
+  background: #eef7ff;
+}
+
+.snake {
+  background: #633434 !important;
+}
+
+.ladder {
+  background: #2c4e2c !important;
+}
+
+.player {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.p1 {
+  background: red;
+  top: 5px;
+  left: 5px;
+}
+
+.p2 {
+  background: blue;
+  top: 5px;
+  right: 5px;
+}
+
+.p3 {
+  background: green;
+  bottom: 5px;
+  left: 5px;
+}
+
+.p4 {
+  background: orange;
+  bottom: 5px;
+  right: 5px;
+}
+
+#controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#diceResult {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.side-panel {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dice-box {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 4px solid #333;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px !important;
+}
+
+#status {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.dice-box {
+  transition: transform 0.2s ease;
+}
+
+.dice-rolling {
+  transform: scale(1.2) rotate(15deg);
+}
